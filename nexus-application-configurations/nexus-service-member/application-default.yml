@@ -1,0 +1,5 @@
+server:
+  port: 6500
+
+message:
+  greeting: Hello, This is Service Member Application
