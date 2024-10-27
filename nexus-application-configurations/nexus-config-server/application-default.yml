@@ -1,4 +1,5 @@
 server:
   port: 5500
 
-message: Hello, This is Config Server
+message:
+  greeting: Hello, This is Config Server Application
