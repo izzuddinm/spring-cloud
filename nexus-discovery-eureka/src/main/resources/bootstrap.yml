@@ -1,0 +1,11 @@
+spring:
+  application:
+    name: nexus-discovery-eureka
+eureka:
+  datacenter: Cloud
+logging:
+  level:
+    com:
+      netflix:
+        eureka: off
+        discovery: off
