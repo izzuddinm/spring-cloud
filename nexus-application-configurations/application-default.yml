@@ -1,0 +1,16 @@
+server:
+  port: 8080
+
+spring:
+  application:
+    name: nexus-config-server
+
+datasource:
+  url: jdbc:mysql://localhost:3306/mydb
+  username: dbuser
+  password: '{cipher}encryptedPasswordHere'
+
+logging:
+  level:
+    root: INFO
+    com.izzuddinm: DEBUG
