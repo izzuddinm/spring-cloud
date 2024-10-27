@@ -39,3 +39,7 @@ management:
           - readinessState
 server:
   shutdown: graceful
+
+logging:
+  level:
+    org.springframework: DEBUG
