@@ -3,3 +3,9 @@ server:
 
 message:
   greeting: Hello, This is Config Server Application
+
+spring:
+  eureka:
+    client:
+      serviceUrl:
+        defaultZone: http://127.0.0.1:5000/eureka/
