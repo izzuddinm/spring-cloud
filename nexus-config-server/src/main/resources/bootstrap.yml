@@ -1,3 +1,8 @@
 spring:
   application:
     name: nexus-config-server
+
+logging:
+  level:
+    com.netflix: DEBUG
+    org.springframework.cloud.netflix.eureka: DEBUG

@@ -8,9 +8,13 @@ spring:
         git:
           uri: https://github.com/izzuddinm/spring-cloud-practice.git
           search-paths:
-            - "nexus-application-configurations"
-            - "nexus-application-configurations/{application}"
+            - nexus-application-configurations
+            - nexus-application-configurations/{application}
           default-label: master
       fail-fast: true
+    eureka:
+      client:
+        serviceUrl:
+          defaultZone: http://localhost:5000/
 encrypt:
   key: e8a1b5a6-32d4-4e8f-9f87-01a2b3c4d567

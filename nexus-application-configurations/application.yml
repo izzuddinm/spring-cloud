@@ -1,1 +1,41 @@
-message: test
+hystrix:
+  command:
+    default:
+      execution:
+        isolation:
+          thread:
+            timeoutInMilliseconds: 120100
+          semaphore:
+            maxConcurrentRequests: 1000
+  threadpool:
+    default:
+      coreSize: 50
+      maxQueueSize: 500
+      queueSizeRejectionThreshold: 400
+management:
+  endpoints:
+    web:
+      exposure:
+        include: '*'
+  health:
+    probes:
+      enabled: true
+    group:
+      liveness:
+        include:
+          - db
+          - diskspace
+          - mongo
+          - ping
+          - redis
+          - livenessState
+      readiness:
+        include:
+          - db
+          - diskspace
+          - mongo
+          - ping
+          - redis
+          - readinessState
+server:
+  shutdown: graceful
