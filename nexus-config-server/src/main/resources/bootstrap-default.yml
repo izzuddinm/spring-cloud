@@ -4,10 +4,10 @@ spring:
       server:
         git:
           uri: https://github.com/izzuddinm/spring-cloud-practice.git
-          searchPaths: 'nexus-application-configurations'  # Ensure this directory exists
+          searchPaths: '{application}'
           default-label: master
       bootstrap: true
 server:
-  port: 7800
+  port: 5500
 encrypt:
   key: NM88C8W258W28BPSSR34QBLFJ7QC6ARV
