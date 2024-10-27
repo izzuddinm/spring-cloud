@@ -3,7 +3,7 @@ spring:
     config:
       server:
         git:
-          uri: https://github.com/your-org/spring-cloud-practice.git
+          uri: https://github.com/izzuddinm/spring-cloud-practice.git
           searchPaths:
             - "nexus-application-configurations"
             - "{application}"
